@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">WIFISafe</string>
+    <string name="welcome_tip">Protect Your WIFI Life</string>
+
+    <string name="permission_rationale">允许以下权限以便程序继续执行：\n\n%1$s</string>
+    <string name="resume">继续</string>
+    <string name="cancel">取消</string>
+    <string name="tip">提示</string>
+
+    <string name="wifi_hotspot">WIFI热点</string>
+    <string name="wifi_unconnect">WIFI处于关闭状态</string>
+
+    <string name="connected">已连接</string>
+    <string name="open_wifi">公开</string>
+    <string name="capa_wifi">通过%s进行加密</string>
+
+    <string name="scroll_floating_behavior">com.administrator.wifisafe.widget.ScollFloatingBehavior</string>
+
+    <string name="wifi_check_title">安全检测</string>
+    <string name="wifi_check_ing">网络检测中…</string>
+    <string name="wifi_security_checking">检测中…</string>
+    <string name="wifi_security_safe">安全</string>
+    <string name="wifi_security_unsafe">不安全</string>
+    <string name="wifi_check_warn">异常</string>
+
+    <string-array name="check_option">
+        <item>检测是否为钓鱼WiFi</item>
+        <item>检测是否为遭到DNS劫持</item>
+        <item>检测Arp是否正常</item>
+        <item>检测WiFi是否加密</item>
+    </string-array>
+    <string name="wifi_unsafe_tip">该网络危险，请勿连接</string>
+    <string name="wifi_warn_tip">该网络不安全，请小心上网</string>
+    <string name="wifi_safe_tip">该网络安全，可以放心上网</string>
+
+
+    <string name="wifi_speed_title">网速检测</string>
+    <string name="wifi_speed_test">开始测速</string>
+    <string name="wifi_speed_retest">重新测速</string>
+    <string name="wifi_speed">当前网速\n %sKB/s</string>
+    <string name="wifi_speed_average">你的平均网速为:%sKB/s</string>
+
+    <string-array name="speed_option">
+        <item>在对追求网速的这件事儿上，你一定是有点想要极致的想法</item>
+        <item>或许，网速对你来说是无所谓有无所谓无的事儿</item>
+        <item>网速卡或者不卡，网就在那里，钱已经交了；你上或者不上，网就在那里，依然精彩</item>
+        <item>恭喜您的网速已经达到没有最卡，只有更卡的境界！让掉线来的更猛烈些吧！不卡的网速不是好网速！</item>
+    </string-array>
+</resources>

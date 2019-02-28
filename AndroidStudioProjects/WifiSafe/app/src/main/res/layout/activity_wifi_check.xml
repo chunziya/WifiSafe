@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:ignore="SmallSp,UseCompoundDrawables,UselessLeaf,RtlHardcoded,RtlSymmetry,HardcodedText">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <View
+        android:id="@+id/view_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/welcome_tip_color"
+        app:layout_constraintBottom_toBottomOf="@id/gl_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="@string/wifi_check_title"
+        app:titleTextAppearance="@style/check_title_expanded"
+        tools:background="@color/default_color" />
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/aciv_wifi"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="45dp"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@drawable/select_wifi_check" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/actv_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/wifi_check_ing"
+        android:textAppearance="@style/check_title_expanded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aciv_wifi" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/actv_security_check"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:drawablePadding="18dp"
+        android:drawableStart="@drawable/ic_security"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:text="@string/wifi_check_title"
+        android:textColor="@color/welcome_text_color"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gl_vertical" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_check"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="50dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actv_security_check" />
+
+</android.support.constraint.ConstraintLayout>

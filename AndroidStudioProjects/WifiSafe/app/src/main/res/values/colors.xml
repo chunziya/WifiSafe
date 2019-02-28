@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/default_color</color>
+    <color name="colorPrimaryDark">@color/default_color</color>
+    <color name="colorAccent">@color/default_color</color>
+
+    <color name="default_color">#fffd9430</color>
+    <color name="unsafe_color">#ffd81e06</color>
+    <color name="deep_default_color">#a1fd9430</color>
+    <color name="default_unenable_color">#ffbcbcbc</color>
+    <color name="welcome_bg_color">#ffe4e5e5</color>
+    <color name="welcome_text_color">#ff253536</color>
+    <color name="welcome_tip_color">#ff00c7b3</color>
+
+    <color name="item_ssid_color">@android:color/black</color>
+    <color name="item_capa_color">#ffa8a8a8</color>
+    <color name="speed_center_color">#ff28c096</color>
+
+
+</resources>
